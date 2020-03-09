@@ -30,8 +30,8 @@ const getRoute = p => p.then(mod => mod.default);
 export const defaultRoute: Route = {
   route: '/',
   async getComponent(appState, params) {
-    const Home = await getRoute(import('./components/Home'));
-    return <Home appState={appState} />;
+    const TodoList = await getRoute(import('./pages/TodoListPage'));
+    return <TodoList />;
   }
 };
 

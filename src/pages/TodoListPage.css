@@ -1,0 +1,13 @@
+.title {
+    font-size: 4em;
+    color: #154890;
+    text-align: center;
+}
+
+.todoListContainer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+}

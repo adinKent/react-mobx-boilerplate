@@ -4,7 +4,7 @@ import { routes, defaultRoute, Route } from './routes';
 import AppState, { AppStateProps } from './stores/AppState';
 
 configure({
-  enforceActions: true
+  enforceActions: "observed"
 });
 
 const hasWindow = typeof window !== 'undefined';
@@ -16,6 +16,7 @@ class App {
   @observable route: React.ReactElement<any> = null;
   // our main app state, this is available in your router
   @observable appState: AppState;
+
   // our router
   router: Router<Route>;
 
